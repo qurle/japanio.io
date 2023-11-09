@@ -1,0 +1,309 @@
+/* Изменение цвета выделения */
+::-moz-selection {background: #C99CD8;}
+::selection {background: #C99CD8;}
+::-moz-selection {background: #C99CD8;}
+::-webkit-selection {background: #C99CD8;}
+
+/* Дебаг row */
+.row{width: 100%}
+
+/* Кнопки в хедере */
+.button{
+    display: block;
+    text-align: center;
+    min-width: 200px;
+    height: 10vh;
+    float: right;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    padding-top: 2.5vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease;  
+}
+.button:hover{
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+/* Выравнивание изображений кассет*/
+.cassette img{margin: auto;}
+
+/* Типографика кассет */
+.cassette p{
+    font-family: 'Open Sans', Corbel, sans-serif;
+    line-height: 1.3;
+    margin: 2vw 2vw 2vw 3vw; 
+    text-align: justify;
+}
+
+/* Типографика абзаца текстового блока */
+.description p{
+    font-family: 'Open Sans', Corbel, sans-serif;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+}
+
+/* Футер */
+footer{
+    display: flex; 
+    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox;
+    min-height: 250px;
+    width: 100%;
+    background-color: #000;
+    background-size: cover;
+    color: #fdfdfd;
+}
+
+/* Текст внутри футера */
+footer a{
+    font-family: 'Open Sans', Corbel, sans-serif;
+    font-weight: 600;
+    color: #fdfdfd;
+}
+footer a:visited{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+footer a:hover{
+    color: #C99CD8;
+    text-decoration: none;
+}
+
+/* Параметры отступа заголовка футера */
+footer h2{padding-top: 1%;}
+
+/* Снятие маркировки списка */
+footer li{list-style-type: none;}
+/**/
+
+/* Изменение заголовка в текстовых блоках */
+h2{
+    font-family: 'Open Sans', Corbel, sans-serif;
+    font-weight: 700;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+/* Хедер */
+header{
+    display: flex;
+    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox;
+    -webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;
+    position: fixed; position: -webkit-sticky;
+    align-items: center;
+    -webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;
+    width: 100%;
+    height: 10vh;
+    color: #fdfdfd;
+    background-color: #9C27B0;
+    box-shadow: -0.5rem 0.5rem 10rem #454545;
+    z-index: 1; 
+    overflow: hidden;
+}
+
+/* Меню в узкоэкранных устройствах */
+.hb{
+    display: none;
+    height: 3.7rem;
+    width: auto;
+    float: right;
+    margin-top: -5.2rem;
+}
+
+
+/* Ссылки в хедере */
+header a{
+    font-family: 'Open Sans', Corbel, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fdfdfd;
+    text-decoration: none;
+}
+header a.active{
+    text-decoration: none;
+    color: #000;
+}
+header a:visited{
+    text-decoration: none;
+    color: none;
+}
+/**/
+
+
+/* Заголовок для блоков-изображений */
+.hh{
+    font-family: 'Open Sans', Corbel, sans-serif;
+    font-weight: 700;
+    margin-top: 17%;
+    text-shadow: 3px 3px 2px #000;
+}
+
+/* Подзаголовок для блоков-изображений */
+.phh{
+    font-family: 'Open Sans', Corbel, sans-serif;
+    text-shadow: 3px 3px 3px #000;
+}
+
+
+/* Лого в хедере */
+.logo{
+    font-family: 'Poiret One', Garamond, serif;
+    padding-left: 20px; 
+    position: relative;
+    top: -0.4rem;
+}
+
+/* Отступ сверху */
+.myslider {background-color: #222;}
+
+/* Максировка неактивного слайда */
+.slide, .slide-first, .slide-second, .slide-third{display: none;}
+
+/* Демонстрация активного слайда */
+.slide-active{display: block;}
+
+/* Параметры слайдов */
+.slide-first, .slide-second, .slide-third{
+    display: flex; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox;
+    align-items: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center;
+    width: 100%;
+    min-height: 200px;
+    background-size: cover;
+    color: #fdfdfd;
+}
+
+/* Фоны для слайдов */
+.slide-first {background-image: url(img/s11.jpg);}
+.slide-second{background-image: url(img/s12.jpg);}
+.slide-third{background-image: url(img/s13.jpg);
+}
+
+.slide-first.img2{background-image: url(img/s21.jpg); !important}
+.slide-second.img2{background-image: url(img/s22.jpg); !important}
+.slide-third.img2{background-image: url(img/s23.jpg); !important}
+
+.slide-first.img3{background-image: url(img/s31.jpg); !important}
+.slide-second.img3{background-image: url(img/s32.jpg); !important}
+.slide-third.img3{background-image: url(img/s33.jpg); !important}
+/**/
+
+/* Параметры точек */
+.slider-dots{ 
+    text-align: center;
+    width: 100%; margin: 0 auto; 
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+/* Параметры точки */
+.dot{
+  color: #bbbcbc;
+  display: inline;
+  margin-right: 5px;
+}
+
+/* Выделение активной точки */ 
+.dot-active{color: #363636;}
+
+/* Позиция кнопки рестарта */
+.restart{
+    position: absolute;
+    opacity: 0.4;
+}
+
+.restart:hover{opacity: 1; transition: all 0.3s ease;}
+
+/* Фоновое изображение на старте сайта */
+.title{
+    display: flex; 
+    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox;
+    align-items: center; 
+    -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center;
+    min-height: 300px;
+    width: 100%;
+    background-image: url(img/title1.jpg);
+    background-size: cover;
+    color: #fdfdfd;
+}
+.title.img2{background-image: url(img/title2.jpg)}
+.title.img3{background-image: url(img/title3.jpg)}
+
+@media screen and (orientation:portrait){
+    
+    /* MSIE не поддерживает vmax. Фикс */
+    footer{height: 10vh;margin-top: -1vh}
+    h2{font-size: 3.5vh}
+    .hh{font-size: 5vh} 
+    .phh{font-size: 3.5vh}
+    .slide-first, .slide-second, .slide-third{height: 50vh}
+    .dot{font-size: 2vh}
+    .restart{
+        width: 8vh; height: 8vh;
+        padding: 2vh;
+        bottom: -4vw;
+        right: 1vh;
+    }
+    .title{height: 50vh}
+}
+
+@media screen and (orientation:landscape){
+    .cassette p{font-size: 1.3vw}
+    .description p{font-size: 1.45vw}
+    footer{height: 10vw;margin-top: -1vw}
+    footer a{font-size: 1.45vw}
+    h2{font-size: 3.5vw}
+    header a{font-size: 1.5vw}
+    .hh{font-size: 5vw} 
+    .phh{font-size: 3.5vw}
+    .slide-first, .slide-second, .slide-third{height: 50vw}
+    .dot{font-size: 2vw}
+    .restart{
+        width: 8vw; height: 8vw;
+        padding: 2vw;
+        bottom: -4vh;
+        right: 1vw;
+    }
+    .title{height: 50vw}
+}
+
+@media screen and (max-width:960px), (orientation: portrait) {
+/*Аккуратное меню для узкоэкранных устройств */
+    header{
+        display: block;
+        height: auto;
+        width: 100%;
+        position: fixed; position: -webkit-sticky;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .button {
+        float: none; 
+        padding-top: 5vh;
+    }
+    .col-md-6:hover{
+        color: #000;
+        cursor: pointer;
+    }
+    .logo{padding-left: -3px;center;}
+    .hb{display: block;}
+    /**/
+    
+    /* Фикс размеров */
+    .cassette p{margin: 0vw 2vw 3vw 3vw; padding-right: 0px;text-align: justify;}
+    header a{font-size: 2rem}
+    footer{min-height: 200px;}
+    .button{padding-top: 2vh;padding-bottom: 2vh;}
+    .cassette p{font-size: 1.5rem}
+    .description p{font-size: 1.6rem}
+    footer a{font-size: 1.4rem}
+    header{box-shadow: -0.5rem 0.5rem 5rem #454545;}
+    /**/
+}
+    
+@media screen and (min-width:960px){.button {display: block !important}}
+
